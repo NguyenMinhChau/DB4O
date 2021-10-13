@@ -71,16 +71,17 @@ namespace ADB2020MidTerm
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.label1);
+            this.groupBox1.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.groupBox1.Location = new System.Drawing.Point(12, 12);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(1044, 332);
+            this.groupBox1.Size = new System.Drawing.Size(1044, 249);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Thông Tin Công Ty";
             // 
             // btnSearch
             // 
-            this.btnSearch.Location = new System.Drawing.Point(588, 262);
+            this.btnSearch.Location = new System.Drawing.Point(910, 146);
             this.btnSearch.Name = "btnSearch";
             this.btnSearch.Size = new System.Drawing.Size(112, 34);
             this.btnSearch.TabIndex = 16;
@@ -90,17 +91,17 @@ namespace ADB2020MidTerm
             // 
             // btnLoad
             // 
-            this.btnLoad.Location = new System.Drawing.Point(435, 262);
+            this.btnLoad.Location = new System.Drawing.Point(556, 191);
             this.btnLoad.Name = "btnLoad";
             this.btnLoad.Size = new System.Drawing.Size(112, 34);
             this.btnLoad.TabIndex = 15;
-            this.btnLoad.Text = "Load";
+            this.btnLoad.Text = "Tải lại";
             this.btnLoad.UseVisualStyleBackColor = true;
             this.btnLoad.Click += new System.EventHandler(this.btnLoad_Click);
             // 
             // btnDelete
             // 
-            this.btnDelete.Location = new System.Drawing.Point(293, 262);
+            this.btnDelete.Location = new System.Drawing.Point(674, 146);
             this.btnDelete.Name = "btnDelete";
             this.btnDelete.Size = new System.Drawing.Size(112, 34);
             this.btnDelete.TabIndex = 14;
@@ -110,17 +111,17 @@ namespace ADB2020MidTerm
             // 
             // btnUpdate
             // 
-            this.btnUpdate.Location = new System.Drawing.Point(153, 262);
+            this.btnUpdate.Location = new System.Drawing.Point(792, 146);
             this.btnUpdate.Name = "btnUpdate";
             this.btnUpdate.Size = new System.Drawing.Size(112, 34);
             this.btnUpdate.TabIndex = 13;
-            this.btnUpdate.Text = "Update";
+            this.btnUpdate.Text = "Sửa";
             this.btnUpdate.UseVisualStyleBackColor = true;
             this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
             // 
             // btnThem
             // 
-            this.btnThem.Location = new System.Drawing.Point(23, 262);
+            this.btnThem.Location = new System.Drawing.Point(556, 146);
             this.btnThem.Name = "btnThem";
             this.btnThem.Size = new System.Drawing.Size(112, 34);
             this.btnThem.TabIndex = 12;
@@ -130,9 +131,9 @@ namespace ADB2020MidTerm
             // 
             // txtQuan
             // 
-            this.txtQuan.Location = new System.Drawing.Point(688, 189);
+            this.txtQuan.Location = new System.Drawing.Point(688, 97);
             this.txtQuan.Name = "txtQuan";
-            this.txtQuan.Size = new System.Drawing.Size(296, 31);
+            this.txtQuan.Size = new System.Drawing.Size(296, 30);
             this.txtQuan.TabIndex = 11;
             this.txtQuan.TextChanged += new System.EventHandler(this.textBox6_TextChanged);
             // 
@@ -140,28 +141,28 @@ namespace ADB2020MidTerm
             // 
             this.txtMaSoThue.Location = new System.Drawing.Point(688, 39);
             this.txtMaSoThue.Name = "txtMaSoThue";
-            this.txtMaSoThue.Size = new System.Drawing.Size(296, 31);
+            this.txtMaSoThue.Size = new System.Drawing.Size(296, 30);
             this.txtMaSoThue.TabIndex = 10;
             // 
             // txtDuongPho
             // 
             this.txtDuongPho.Location = new System.Drawing.Point(153, 195);
             this.txtDuongPho.Name = "txtDuongPho";
-            this.txtDuongPho.Size = new System.Drawing.Size(360, 31);
+            this.txtDuongPho.Size = new System.Drawing.Size(360, 30);
             this.txtDuongPho.TabIndex = 9;
             // 
             // txtSoNha
             // 
             this.txtSoNha.Location = new System.Drawing.Point(153, 146);
             this.txtSoNha.Name = "txtSoNha";
-            this.txtSoNha.Size = new System.Drawing.Size(360, 31);
+            this.txtSoNha.Size = new System.Drawing.Size(360, 30);
             this.txtSoNha.TabIndex = 8;
             // 
             // txtTenCT
             // 
             this.txtTenCT.Location = new System.Drawing.Point(153, 92);
             this.txtTenCT.Name = "txtTenCT";
-            this.txtTenCT.Size = new System.Drawing.Size(360, 31);
+            this.txtTenCT.Size = new System.Drawing.Size(360, 30);
             this.txtTenCT.TabIndex = 7;
             // 
             // txtMaCT
@@ -169,24 +170,24 @@ namespace ADB2020MidTerm
             this.txtMaCT.Location = new System.Drawing.Point(153, 42);
             this.txtMaCT.Name = "txtMaCT";
             this.txtMaCT.ReadOnly = true;
-            this.txtMaCT.Size = new System.Drawing.Size(360, 31);
+            this.txtMaCT.Size = new System.Drawing.Size(360, 30);
             this.txtMaCT.TabIndex = 6;
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(547, 195);
+            this.label6.Location = new System.Drawing.Point(547, 100);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(55, 25);
+            this.label6.Size = new System.Drawing.Size(107, 22);
             this.label6.TabIndex = 5;
-            this.label6.Text = "Quận";
+            this.label6.Text = "Quận/Huyện";
             // 
             // label5
             // 
             this.label5.AutoSize = true;
             this.label5.Location = new System.Drawing.Point(23, 198);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(104, 25);
+            this.label5.Size = new System.Drawing.Size(99, 22);
             this.label5.TabIndex = 4;
             this.label5.Text = "Đường Phố";
             // 
@@ -195,7 +196,7 @@ namespace ADB2020MidTerm
             this.label4.AutoSize = true;
             this.label4.Location = new System.Drawing.Point(23, 146);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(67, 25);
+            this.label4.Size = new System.Drawing.Size(63, 22);
             this.label4.TabIndex = 3;
             this.label4.Text = "Số nhà";
             // 
@@ -204,7 +205,7 @@ namespace ADB2020MidTerm
             this.label3.AutoSize = true;
             this.label3.Location = new System.Drawing.Point(547, 42);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(106, 25);
+            this.label3.Size = new System.Drawing.Size(106, 22);
             this.label3.TabIndex = 2;
             this.label3.Text = "Mã Số Thuế";
             // 
@@ -213,7 +214,7 @@ namespace ADB2020MidTerm
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(23, 92);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(108, 25);
+            this.label2.Size = new System.Drawing.Size(111, 22);
             this.label2.TabIndex = 1;
             this.label2.Text = "Tên Công Ty";
             // 
@@ -222,14 +223,14 @@ namespace ADB2020MidTerm
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(23, 42);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(107, 25);
+            this.label1.Size = new System.Drawing.Size(107, 22);
             this.label1.TabIndex = 0;
             this.label1.Text = "Mã Công Ty";
             // 
             // dgvCongTy
             // 
             this.dgvCongTy.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvCongTy.Location = new System.Drawing.Point(13, 361);
+            this.dgvCongTy.Location = new System.Drawing.Point(12, 267);
             this.dgvCongTy.Name = "dgvCongTy";
             this.dgvCongTy.RowHeadersWidth = 62;
             this.dgvCongTy.RowTemplate.Height = 33;
@@ -241,12 +242,12 @@ namespace ADB2020MidTerm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1068, 640);
+            this.ClientSize = new System.Drawing.Size(1068, 548);
             this.Controls.Add(this.dgvCongTy);
             this.Controls.Add(this.groupBox1);
             this.Name = "FormCongTy";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "FormCongTy";
+            this.Text = "Công Ty";
             this.Load += new System.EventHandler(this.FormCongTy_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
