@@ -98,6 +98,7 @@ namespace DB4OStudent
             txtLastName.Text = dgv_student.Rows[e.RowIndex].Cells[2].Value.ToString();
             txtRegister.Text = dgv_student.Rows[e.RowIndex].Cells[3].Value.ToString();
             dtp_dob.Text = dgv_student.Rows[e.RowIndex].Cells[4].Value.ToString();
+            txtAge.Text = dgv_student.Rows[e.RowIndex].Cells[5].Value.ToString();
         }
 
         private void btnUpdate_Click(object sender, EventArgs e)
@@ -131,7 +132,7 @@ namespace DB4OStudent
         {
             // Đi tìm gần đúng: Cụ thể theo tên
             var result = db.Query<Student>(delegate (Student student) {
-                return student.LastName.ToLower().Contains(txtLastName.Text.ToLower());
+                return student.LastName.ToLower().Contains(txtLastName.Text.ToLower()) && student.YearOld.ToString().Contains(txtAge.Text.ToString());
             });
             // Trả về kết quả
             dgv_student.DataSource = result.ToList();
@@ -140,6 +141,11 @@ namespace DB4OStudent
         private void btnLoad_Click(object sender, EventArgs e)
         {
             loadAllData();
+            txtAge.Text = "";
+            txtFirstName.Text = "";
+            txtId.Text = "";
+            txtLastName.Text = "";
+            txtRegister.Text = "";
         }
     }
 }

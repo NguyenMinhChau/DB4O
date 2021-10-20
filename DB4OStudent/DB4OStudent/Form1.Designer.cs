@@ -45,106 +45,115 @@ namespace DB4OStudent
             this.btnDelete = new System.Windows.Forms.Button();
             this.btnSearch = new System.Windows.Forms.Button();
             this.btnLoad = new System.Windows.Forms.Button();
+            this.label6 = new System.Windows.Forms.Label();
+            this.txtAge = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_student)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(32, 43);
+            this.label1.Location = new System.Drawing.Point(36, 54);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(70, 17);
+            this.label1.Size = new System.Drawing.Size(83, 20);
             this.label1.TabIndex = 0;
             this.label1.Text = "StudentID";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(32, 88);
+            this.label2.Location = new System.Drawing.Point(36, 110);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(72, 17);
+            this.label2.Size = new System.Drawing.Size(82, 20);
             this.label2.TabIndex = 1;
             this.label2.Text = "FirstName";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(32, 135);
+            this.label3.Location = new System.Drawing.Point(36, 169);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(72, 17);
+            this.label3.Size = new System.Drawing.Size(82, 20);
             this.label3.TabIndex = 2;
             this.label3.Text = "LastName";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(32, 182);
+            this.label4.Location = new System.Drawing.Point(36, 228);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(100, 17);
+            this.label4.Size = new System.Drawing.Size(112, 20);
             this.label4.TabIndex = 3;
             this.label4.Text = "Năm nhập học";
             // 
             // dtp_dob
             // 
-            this.dtp_dob.Location = new System.Drawing.Point(134, 221);
+            this.dtp_dob.Location = new System.Drawing.Point(151, 276);
+            this.dtp_dob.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.dtp_dob.Name = "dtp_dob";
-            this.dtp_dob.Size = new System.Drawing.Size(201, 22);
+            this.dtp_dob.Size = new System.Drawing.Size(226, 26);
             this.dtp_dob.TabIndex = 4;
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(35, 221);
+            this.label5.Location = new System.Drawing.Point(39, 276);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(71, 17);
+            this.label5.Size = new System.Drawing.Size(78, 20);
             this.label5.TabIndex = 5;
             this.label5.Text = "Ngày sinh";
             // 
             // txtId
             // 
-            this.txtId.Location = new System.Drawing.Point(134, 43);
+            this.txtId.Location = new System.Drawing.Point(151, 54);
+            this.txtId.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtId.Name = "txtId";
             this.txtId.ReadOnly = true;
-            this.txtId.Size = new System.Drawing.Size(201, 22);
+            this.txtId.Size = new System.Drawing.Size(226, 26);
             this.txtId.TabIndex = 6;
             // 
             // txtRegister
             // 
-            this.txtRegister.Location = new System.Drawing.Point(134, 182);
+            this.txtRegister.Location = new System.Drawing.Point(151, 228);
+            this.txtRegister.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtRegister.Name = "txtRegister";
-            this.txtRegister.Size = new System.Drawing.Size(201, 22);
+            this.txtRegister.Size = new System.Drawing.Size(226, 26);
             this.txtRegister.TabIndex = 7;
             // 
             // txtLastName
             // 
-            this.txtLastName.Location = new System.Drawing.Point(134, 135);
+            this.txtLastName.Location = new System.Drawing.Point(151, 169);
+            this.txtLastName.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtLastName.Name = "txtLastName";
-            this.txtLastName.Size = new System.Drawing.Size(201, 22);
+            this.txtLastName.Size = new System.Drawing.Size(226, 26);
             this.txtLastName.TabIndex = 8;
             // 
             // txtFirstName
             // 
-            this.txtFirstName.Location = new System.Drawing.Point(134, 88);
+            this.txtFirstName.Location = new System.Drawing.Point(151, 110);
+            this.txtFirstName.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtFirstName.Name = "txtFirstName";
-            this.txtFirstName.Size = new System.Drawing.Size(201, 22);
+            this.txtFirstName.Size = new System.Drawing.Size(226, 26);
             this.txtFirstName.TabIndex = 9;
             // 
             // dgv_student
             // 
             this.dgv_student.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgv_student.Location = new System.Drawing.Point(12, 283);
+            this.dgv_student.Location = new System.Drawing.Point(14, 354);
+            this.dgv_student.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.dgv_student.Name = "dgv_student";
             this.dgv_student.RowHeadersWidth = 51;
             this.dgv_student.RowTemplate.Height = 24;
-            this.dgv_student.Size = new System.Drawing.Size(776, 219);
+            this.dgv_student.Size = new System.Drawing.Size(873, 274);
             this.dgv_student.TabIndex = 10;
             this.dgv_student.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_student_CellClick);
             // 
             // btnAdd
             // 
-            this.btnAdd.Location = new System.Drawing.Point(385, 43);
+            this.btnAdd.Location = new System.Drawing.Point(433, 54);
+            this.btnAdd.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnAdd.Name = "btnAdd";
-            this.btnAdd.Size = new System.Drawing.Size(106, 30);
+            this.btnAdd.Size = new System.Drawing.Size(119, 38);
             this.btnAdd.TabIndex = 11;
             this.btnAdd.Text = "Add";
             this.btnAdd.UseVisualStyleBackColor = true;
@@ -152,9 +161,10 @@ namespace DB4OStudent
             // 
             // btnUpdate
             // 
-            this.btnUpdate.Location = new System.Drawing.Point(385, 88);
+            this.btnUpdate.Location = new System.Drawing.Point(433, 110);
+            this.btnUpdate.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnUpdate.Name = "btnUpdate";
-            this.btnUpdate.Size = new System.Drawing.Size(106, 30);
+            this.btnUpdate.Size = new System.Drawing.Size(119, 38);
             this.btnUpdate.TabIndex = 12;
             this.btnUpdate.Text = "Update";
             this.btnUpdate.UseVisualStyleBackColor = true;
@@ -162,9 +172,10 @@ namespace DB4OStudent
             // 
             // btnDelete
             // 
-            this.btnDelete.Location = new System.Drawing.Point(385, 135);
+            this.btnDelete.Location = new System.Drawing.Point(596, 121);
+            this.btnDelete.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnDelete.Name = "btnDelete";
-            this.btnDelete.Size = new System.Drawing.Size(106, 30);
+            this.btnDelete.Size = new System.Drawing.Size(119, 38);
             this.btnDelete.TabIndex = 13;
             this.btnDelete.Text = "Delete";
             this.btnDelete.UseVisualStyleBackColor = true;
@@ -172,9 +183,10 @@ namespace DB4OStudent
             // 
             // btnSearch
             // 
-            this.btnSearch.Location = new System.Drawing.Point(385, 182);
+            this.btnSearch.Location = new System.Drawing.Point(433, 169);
+            this.btnSearch.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnSearch.Name = "btnSearch";
-            this.btnSearch.Size = new System.Drawing.Size(106, 30);
+            this.btnSearch.Size = new System.Drawing.Size(119, 38);
             this.btnSearch.TabIndex = 14;
             this.btnSearch.Text = "Search";
             this.btnSearch.UseVisualStyleBackColor = true;
@@ -182,19 +194,38 @@ namespace DB4OStudent
             // 
             // btnLoad
             // 
-            this.btnLoad.Location = new System.Drawing.Point(530, 43);
+            this.btnLoad.Location = new System.Drawing.Point(596, 54);
+            this.btnLoad.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnLoad.Name = "btnLoad";
-            this.btnLoad.Size = new System.Drawing.Size(106, 30);
+            this.btnLoad.Size = new System.Drawing.Size(119, 38);
             this.btnLoad.TabIndex = 15;
             this.btnLoad.Text = "Load";
             this.btnLoad.UseVisualStyleBackColor = true;
             this.btnLoad.Click += new System.EventHandler(this.btnLoad_Click);
             // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(429, 282);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(39, 20);
+            this.label6.TabIndex = 16;
+            this.label6.Text = "Tuổi";
+            // 
+            // txtAge
+            // 
+            this.txtAge.Location = new System.Drawing.Point(504, 278);
+            this.txtAge.Name = "txtAge";
+            this.txtAge.Size = new System.Drawing.Size(211, 26);
+            this.txtAge.TabIndex = 17;
+            // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 514);
+            this.ClientSize = new System.Drawing.Size(900, 642);
+            this.Controls.Add(this.txtAge);
+            this.Controls.Add(this.label6);
             this.Controls.Add(this.btnLoad);
             this.Controls.Add(this.btnSearch);
             this.Controls.Add(this.btnDelete);
@@ -211,6 +242,7 @@ namespace DB4OStudent
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
+            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "Form1";
             this.Text = "DB4O Student";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form1_FormClosing);
@@ -239,6 +271,8 @@ namespace DB4OStudent
         private System.Windows.Forms.Button btnDelete;
         private System.Windows.Forms.Button btnSearch;
         private System.Windows.Forms.Button btnLoad;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.TextBox txtAge;
     }
 }
 
