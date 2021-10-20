@@ -52,6 +52,9 @@ namespace Demo01_03
             var result = db.QueryByExample(filterObj);
             // Đổ dũ liệu ra dgvPilot
             dgvPilot.DataSource = result;
+            txtId.Text = "";
+            txtName.Text = "";
+            txtPoint.Text = "";
         }
 
         private void btnLoad_Click(object sender, EventArgs e)
