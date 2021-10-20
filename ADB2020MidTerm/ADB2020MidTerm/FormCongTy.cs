@@ -54,6 +54,12 @@ namespace ADB2020MidTerm
         private void btnLoad_Click(object sender, EventArgs e)
         {
             LayDanhSachCongTy();
+            txtDuongPho.Text = "";
+            txtMaCT.Text = "";
+            txtMaSoThue.Text = "";
+            txtQuan.Text = "";
+            txtSoNha.Text = "";
+            txtTenCT.Text = "";
         }
 
         private void dgvCongTy_CellClick(object sender, DataGridViewCellEventArgs e)

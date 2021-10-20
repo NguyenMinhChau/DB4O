@@ -99,5 +99,14 @@ namespace ADB2020MidTerm
             // Trả về kết quả
             dgvNhanVien.DataSource = result.ToList();
         }
+
+        private void btnLoadNV_Click(object sender, EventArgs e)
+        {
+            LayDanhSachNhanVien();
+            txtLuong.Text = "";
+            txtMaNV.Text = "";
+            txtSkill.Text = "";
+            txtTenNV.Text = "";
+        }
     }
 }

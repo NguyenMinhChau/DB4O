@@ -69,6 +69,7 @@ namespace ADB2020MidTerm
             this.btnLoadNV.TabIndex = 9;
             this.btnLoadNV.Text = "Tải lại";
             this.btnLoadNV.UseVisualStyleBackColor = true;
+            this.btnLoadNV.Click += new System.EventHandler(this.btnLoadNV_Click);
             // 
             // btnDeleteNV
             // 
