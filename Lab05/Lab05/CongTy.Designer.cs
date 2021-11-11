@@ -59,16 +59,18 @@ namespace Lab05
             this.employeeToolStripMenuItem.Name = "employeeToolStripMenuItem";
             this.employeeToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
             this.employeeToolStripMenuItem.Text = "Employee";
+            this.employeeToolStripMenuItem.Click += new System.EventHandler(this.employeeToolStripMenuItem_Click);
             // 
-            // Form1
+            // CongTy
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(904, 473);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
-            this.Name = "Form1";
+            this.Name = "CongTy";
             this.Text = "Công ty";
+            this.Load += new System.EventHandler(this.CongTy_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);

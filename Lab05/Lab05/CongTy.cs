@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Lab05.DB;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -17,5 +18,15 @@ namespace Lab05
             InitializeComponent();
         }
 
+        private void employeeToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            var form = new Employee();
+            form.Show();
+        }
+
+        private void CongTy_Load(object sender, EventArgs e)
+        {
+            Database.DbFileName = "employee.dat";
+        }
     }
 }
