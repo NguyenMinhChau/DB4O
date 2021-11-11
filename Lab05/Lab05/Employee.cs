@@ -25,8 +25,8 @@ namespace Lab05
 
         private void button2_Click(object sender, EventArgs e)
         {
-            var filterObj = new Lab05.Elmasri_Navathe.Employee();
-            var result = (Lab05.Elmasri_Navathe.Employee)Database.DB.QueryByExample(filterObj);
+            var filterObj = new Lab05.Elmasri_Navathe.Employee(txtMaNV.Text);
+            var result = (Lab05.Elmasri_Navathe.Employee)Database.DB.QueryByExample(filterObj)[0];
             Database.Delete(result);
             LayDanhSachNhanVien();
         }

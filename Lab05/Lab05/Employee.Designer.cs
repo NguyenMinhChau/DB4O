@@ -53,6 +53,7 @@ namespace Lab05
             this.dgvEmployee = new System.Windows.Forms.DataGridView();
             this.label9 = new System.Windows.Forms.Label();
             this.txtMaNV = new System.Windows.Forms.TextBox();
+            this.btnTimKiemNV = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvEmployee)).BeginInit();
             this.SuspendLayout();
             // 
@@ -269,11 +270,21 @@ namespace Lab05
             this.txtMaNV.Size = new System.Drawing.Size(325, 30);
             this.txtMaNV.TabIndex = 16;
             // 
+            // btnTimKiemNV
+            // 
+            this.btnTimKiemNV.Location = new System.Drawing.Point(517, 265);
+            this.btnTimKiemNV.Name = "btnTimKiemNV";
+            this.btnTimKiemNV.Size = new System.Drawing.Size(423, 34);
+            this.btnTimKiemNV.TabIndex = 17;
+            this.btnTimKiemNV.Text = "Tìm kiếm nhân viên làm việc cho công ty";
+            this.btnTimKiemNV.UseVisualStyleBackColor = true;
+            // 
             // Employee
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 22F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(979, 597);
+            this.Controls.Add(this.btnTimKiemNV);
             this.Controls.Add(this.txtMaNV);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.dgvEmployee);
@@ -335,5 +346,6 @@ namespace Lab05
         private System.Windows.Forms.DataGridView dgvEmployee;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.TextBox txtMaNV;
+        private System.Windows.Forms.Button btnTimKiemNV;
     }
 }
