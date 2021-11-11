@@ -5,6 +5,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 
@@ -25,7 +26,7 @@ namespace Lab05
         private void button2_Click(object sender, EventArgs e)
         {
             var filterObj = new Lab05.Elmasri_Navathe.Employee();
-            var result = (Lab05.Elmasri_Navathe.Employee)Database.DB.QueryByExample(filterObj)[0];
+            var result = (Lab05.Elmasri_Navathe.Employee)Database.DB.QueryByExample(filterObj);
             Database.Delete(result);
             LayDanhSachNhanVien();
         }
@@ -84,7 +85,7 @@ namespace Lab05
               {
                   return nv.LName.ToLower().Contains(txtLastName.Text.ToLower());
               });
-            dgvEmployee.DataSource = result;
+            dgvEmployee.DataSource = result.ToList();
         }
 
         private void btnLoad_Click(object sender, EventArgs e)
