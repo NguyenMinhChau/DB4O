@@ -57,7 +57,7 @@ namespace Lab05
             // employeeToolStripMenuItem
             // 
             this.employeeToolStripMenuItem.Name = "employeeToolStripMenuItem";
-            this.employeeToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
+            this.employeeToolStripMenuItem.Size = new System.Drawing.Size(192, 34);
             this.employeeToolStripMenuItem.Text = "Employee";
             this.employeeToolStripMenuItem.Click += new System.EventHandler(this.employeeToolStripMenuItem_Click);
             // 
@@ -70,6 +70,7 @@ namespace Lab05
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "CongTy";
             this.Text = "Công ty";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.CongTy_FormClosing);
             this.Load += new System.EventHandler(this.CongTy_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();

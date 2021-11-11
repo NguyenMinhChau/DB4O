@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Lab05.DB;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -23,6 +24,14 @@ namespace Lab05
         private void button2_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void btnThem_Click(object sender, EventArgs e)
+        {
+            var nhanvien = new Employee
+            {
+            };
+                         
         }
     }
 }

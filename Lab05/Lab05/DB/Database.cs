@@ -10,8 +10,11 @@ namespace Lab05.DB
     public class Database
     {
         public static string DbFileName { get; set; }
-        public static IObjectContainer DB => Db4oEmbedded.OpenFile(DbFileName);
-        public static void CloseDB(IObjectContainer db) { db.Close(); }
+        public static IObjectContainer DB = null;
+        public static void Open() {
+            DB = Db4oEmbedded.OpenFile(DbFileName);
+        }
+        public static void CloseDB() { DB.Close(); }
 
         //Phương thức tạo đối tượng Employee
         public static void CreateEmployees(IObjectContainer db, string fileName)
@@ -37,14 +40,7 @@ namespace Lab05.DB
                         float salary = float.Parse(fields[7]);
                         Employee e = new Employee
                         {
-                            Ssn = ssn,
-                            FName = fname,
-                            MInit = minit,
-                            LName = lname,
-                            Address = address,
-                            BirthDate = bdate,
-                            Salary = salary,
-                            Sex = sex
+                            
                         };
                         db.Store(e);
                     }
@@ -198,24 +194,7 @@ namespace Lab05.DB
                     {
                         return (dept.DNumber == dno);
                     });
-                    Department d = null;
-                    if (depts != null)
-                        d = depts[0];
-                    IList<Employee> emps = db.Query(delegate (Employee emp)
-                    {
-                        return (emp.Ssn == essn);
-                    });
-                    Employee e = null;
-                    if (emps != null && emps.Count != 0)
-                        e = emps[0];
-                    if (e != null && d != null)
-                    {
-                        d.MgrStartDate = startDate; 
-                        e.Manages = d; 
-                        d.Manager = e; 
-                        db.Store(d); 
-                        db.Store(e); 
-                    }
+                    
                 }
             }
         } 

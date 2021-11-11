@@ -22,5 +22,17 @@ namespace Lab05.Elmasri_Navathe
         public List<Dependent> Dependents { get; set; }
         public Employee Supervisor { get; set; }
         public List<Employee> Supervisees { get; set; }
+
+        public Employee(int ssn = 0, string fname = null, char minit = '0', string lname = null, string address = null, string dob = null, float salary = 0, char sex = '0')
+        {
+            Ssn = ssn;
+            FName = fname;
+            MInit = minit;
+            LName = lname;
+            Address = address;
+            BirthDate = dob;
+            Salary = salary;
+            Sex = sex;
+        }
     }
 }

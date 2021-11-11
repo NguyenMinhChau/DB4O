@@ -27,6 +27,12 @@ namespace Lab05
         private void CongTy_Load(object sender, EventArgs e)
         {
             Database.DbFileName = "employee.dat";
+            Database.Open();
+        }
+
+        private void CongTy_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Database.CloseDB();
         }
     }
 }
