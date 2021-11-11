@@ -57,11 +57,11 @@ namespace Lab05
         {
             txtMaNV.Text = dgvEmployee.Rows[e.RowIndex].Cells[0].Value.ToString();
             txtFistName.Text = dgvEmployee.Rows[e.RowIndex].Cells[1].Value.ToString();
-            txtLastName.Text = dgvEmployee.Rows[e.RowIndex].Cells[3].Value.ToString();
-            //cbGioiTinh.Text = dgvEmployee.Rows[e.RowIndex].Cells[7].Value.ToString();
-            dtpNgaySinh.Text = dgvEmployee.Rows[e.RowIndex].Cells[5].Value.ToString();
-            txtDiaChi.Text = dgvEmployee.Rows[e.RowIndex].Cells[4].Value.ToString();
-            txtLuong.Text = dgvEmployee.Rows[e.RowIndex].Cells[6].Value.ToString();
+            txtLastName.Text = dgvEmployee.Rows[e.RowIndex].Cells[2].Value.ToString();
+            cbGioiTinh.Text = dgvEmployee.Rows[e.RowIndex].Cells[6].Value.ToString();
+            dtpNgaySinh.Text = dgvEmployee.Rows[e.RowIndex].Cells[4].Value.ToString();
+            txtDiaChi.Text = dgvEmployee.Rows[e.RowIndex].Cells[3].Value.ToString();
+            txtLuong.Text = dgvEmployee.Rows[e.RowIndex].Cells[5].Value.ToString();
         }
 
         private void btnSua_Click(object sender, EventArgs e)
@@ -90,6 +90,7 @@ namespace Lab05
         private void btnLoad_Click(object sender, EventArgs e)
         {
             LayDanhSachNhanVien();
+            txtMaNV.Text = "";
             txtFistName.Text = "";
             txtLastName.Text = "";
             cbGioiTinh.Text = "";

@@ -225,15 +225,15 @@ namespace Lab05
             // 
             this.btnTimKiem.Location = new System.Drawing.Point(517, 215);
             this.btnTimKiem.Name = "btnTimKiem";
-            this.btnTimKiem.Size = new System.Drawing.Size(123, 30);
+            this.btnTimKiem.Size = new System.Drawing.Size(278, 30);
             this.btnTimKiem.TabIndex = 12;
-            this.btnTimKiem.Text = "Tìm Kiếm";
+            this.btnTimKiem.Text = "Tìm kiếm theo LastName";
             this.btnTimKiem.UseVisualStyleBackColor = true;
             this.btnTimKiem.Click += new System.EventHandler(this.btnTimKiem_Click);
             // 
             // btnLoad
             // 
-            this.btnLoad.Location = new System.Drawing.Point(672, 215);
+            this.btnLoad.Location = new System.Drawing.Point(817, 215);
             this.btnLoad.Name = "btnLoad";
             this.btnLoad.Size = new System.Drawing.Size(123, 30);
             this.btnLoad.TabIndex = 13;
