@@ -26,6 +26,11 @@ namespace Lab05.Elmasri_Navathe
         public Employee Supervisor { get; set; }
         public List<Employee> Supervisees { get; set; }
 
+        public override string ToString()
+        {
+            return string.Format("{0}, {1}, {2}, {3}, {4} ({5})",FName,LName,Sex,BirthDate,Address,Salary);
+        }
+
         public Employee(string ssn = null, string fname = null, char minit = '0', string lname = null, string address = null, string dob = null, double salary = 0.0, string sex = null)
         {
             Ssn = ssn;

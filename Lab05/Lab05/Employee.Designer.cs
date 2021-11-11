@@ -219,6 +219,7 @@ namespace Lab05
             this.btnSua.TabIndex = 11;
             this.btnSua.Text = "Sửa";
             this.btnSua.UseVisualStyleBackColor = true;
+            this.btnSua.Click += new System.EventHandler(this.btnSua_Click);
             // 
             // btnTimKiem
             // 
@@ -228,6 +229,7 @@ namespace Lab05
             this.btnTimKiem.TabIndex = 12;
             this.btnTimKiem.Text = "Tìm Kiếm";
             this.btnTimKiem.UseVisualStyleBackColor = true;
+            this.btnTimKiem.Click += new System.EventHandler(this.btnTimKiem_Click);
             // 
             // btnLoad
             // 
@@ -237,6 +239,7 @@ namespace Lab05
             this.btnLoad.TabIndex = 13;
             this.btnLoad.Text = "Tải Lại";
             this.btnLoad.UseVisualStyleBackColor = true;
+            this.btnLoad.Click += new System.EventHandler(this.btnLoad_Click);
             // 
             // dgvEmployee
             // 
@@ -247,6 +250,7 @@ namespace Lab05
             this.dgvEmployee.RowTemplate.Height = 33;
             this.dgvEmployee.Size = new System.Drawing.Size(914, 243);
             this.dgvEmployee.TabIndex = 14;
+            this.dgvEmployee.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvEmployee_CellClick);
             // 
             // label9
             // 
