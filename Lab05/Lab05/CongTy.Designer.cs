@@ -69,6 +69,7 @@ namespace Lab05
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "CongTy";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Công ty";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.CongTy_FormClosing);
             this.Load += new System.EventHandler(this.CongTy_Load);
