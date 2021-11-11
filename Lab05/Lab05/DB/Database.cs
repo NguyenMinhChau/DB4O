@@ -40,7 +40,7 @@ namespace Lab05.DB
                         float salary = float.Parse(fields[7]);
                         Employee e = new Employee
                         {
-                            
+                           
                         };
                         db.Store(e);
                     }

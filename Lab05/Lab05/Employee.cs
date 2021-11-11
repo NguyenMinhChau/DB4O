@@ -30,6 +30,7 @@ namespace Lab05
         {
             var nhanvien = new Employee
             {
+               
             };
                          
         }

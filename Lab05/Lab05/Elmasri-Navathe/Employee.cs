@@ -1,11 +1,14 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Text;
 
 namespace Lab05.Elmasri_Navathe
 {
+    [Serializable]
     public class Employee
     {
+        [Key]
         // attributes
         public int Ssn { get; set; }
         public string FName { get; set; }
