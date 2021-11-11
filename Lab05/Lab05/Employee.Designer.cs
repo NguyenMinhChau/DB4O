@@ -51,13 +51,15 @@ namespace Lab05
             this.btnTimKiem = new System.Windows.Forms.Button();
             this.btnLoad = new System.Windows.Forms.Button();
             this.dgvEmployee = new System.Windows.Forms.DataGridView();
+            this.label9 = new System.Windows.Forms.Label();
+            this.txtMaNV = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgvEmployee)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(26, 16);
+            this.label1.Location = new System.Drawing.Point(26, 70);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(93, 22);
             this.label1.TabIndex = 0;
@@ -66,7 +68,7 @@ namespace Lab05
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(26, 62);
+            this.label2.Location = new System.Drawing.Point(26, 122);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(89, 22);
             this.label2.TabIndex = 1;
@@ -75,7 +77,7 @@ namespace Lab05
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(26, 114);
+            this.label3.Location = new System.Drawing.Point(26, 179);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(88, 22);
             this.label3.TabIndex = 2;
@@ -84,7 +86,7 @@ namespace Lab05
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(26, 162);
+            this.label4.Location = new System.Drawing.Point(26, 235);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(88, 22);
             this.label4.TabIndex = 3;
@@ -93,7 +95,7 @@ namespace Lab05
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(26, 216);
+            this.label5.Location = new System.Drawing.Point(26, 291);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(68, 22);
             this.label5.TabIndex = 4;
@@ -128,14 +130,14 @@ namespace Lab05
             // 
             // txtFistName
             // 
-            this.txtFistName.Location = new System.Drawing.Point(148, 16);
+            this.txtFistName.Location = new System.Drawing.Point(148, 62);
             this.txtFistName.Name = "txtFistName";
             this.txtFistName.Size = new System.Drawing.Size(325, 30);
             this.txtFistName.TabIndex = 1;
             // 
             // txtLastName
             // 
-            this.txtLastName.Location = new System.Drawing.Point(148, 62);
+            this.txtLastName.Location = new System.Drawing.Point(148, 114);
             this.txtLastName.Name = "txtLastName";
             this.txtLastName.Size = new System.Drawing.Size(325, 30);
             this.txtLastName.TabIndex = 2;
@@ -147,21 +149,21 @@ namespace Lab05
             "Nam",
             "Nữ",
             "Khác"});
-            this.cbGioiTinh.Location = new System.Drawing.Point(148, 111);
+            this.cbGioiTinh.Location = new System.Drawing.Point(148, 171);
             this.cbGioiTinh.Name = "cbGioiTinh";
             this.cbGioiTinh.Size = new System.Drawing.Size(325, 30);
             this.cbGioiTinh.TabIndex = 3;
             // 
             // dtpNgaySinh
             // 
-            this.dtpNgaySinh.Location = new System.Drawing.Point(148, 162);
+            this.dtpNgaySinh.Location = new System.Drawing.Point(148, 227);
             this.dtpNgaySinh.Name = "dtpNgaySinh";
             this.dtpNgaySinh.Size = new System.Drawing.Size(325, 30);
             this.dtpNgaySinh.TabIndex = 4;
             // 
             // txtDiaChi
             // 
-            this.txtDiaChi.Location = new System.Drawing.Point(148, 216);
+            this.txtDiaChi.Location = new System.Drawing.Point(148, 283);
             this.txtDiaChi.Name = "txtDiaChi";
             this.txtDiaChi.Size = new System.Drawing.Size(325, 30);
             this.txtDiaChi.TabIndex = 5;
@@ -239,18 +241,37 @@ namespace Lab05
             // dgvEmployee
             // 
             this.dgvEmployee.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvEmployee.Location = new System.Drawing.Point(26, 271);
+            this.dgvEmployee.Location = new System.Drawing.Point(26, 343);
             this.dgvEmployee.Name = "dgvEmployee";
             this.dgvEmployee.RowHeadersWidth = 62;
             this.dgvEmployee.RowTemplate.Height = 33;
-            this.dgvEmployee.Size = new System.Drawing.Size(914, 315);
+            this.dgvEmployee.Size = new System.Drawing.Size(914, 243);
             this.dgvEmployee.TabIndex = 14;
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(34, 19);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(68, 22);
+            this.label9.TabIndex = 15;
+            this.label9.Text = "Mã NV";
+            // 
+            // txtMaNV
+            // 
+            this.txtMaNV.Location = new System.Drawing.Point(148, 16);
+            this.txtMaNV.Name = "txtMaNV";
+            this.txtMaNV.ReadOnly = true;
+            this.txtMaNV.Size = new System.Drawing.Size(325, 30);
+            this.txtMaNV.TabIndex = 16;
             // 
             // Employee
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 22F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(979, 597);
+            this.Controls.Add(this.txtMaNV);
+            this.Controls.Add(this.label9);
             this.Controls.Add(this.dgvEmployee);
             this.Controls.Add(this.btnLoad);
             this.Controls.Add(this.btnTimKiem);
@@ -307,5 +328,7 @@ namespace Lab05
         private System.Windows.Forms.Button btnTimKiem;
         private System.Windows.Forms.Button btnLoad;
         private System.Windows.Forms.DataGridView dgvEmployee;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.TextBox txtMaNV;
     }
 }

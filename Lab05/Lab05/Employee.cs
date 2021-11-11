@@ -1,4 +1,5 @@
 ﻿using Lab05.DB;
+using Lab05.Elmasri_Navathe;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -18,7 +19,7 @@ namespace Lab05
 
         private void Employee_Load(object sender, EventArgs e)
         {
-
+            LayDanhSachNhanVien();
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -28,11 +29,12 @@ namespace Lab05
 
         private void btnThem_Click(object sender, EventArgs e)
         {
-            var nhanvien = new Employee
-            {
-               
-            };
-                         
+           
+        }
+
+        private void LayDanhSachNhanVien()
+        {
+            
         }
     }
 }

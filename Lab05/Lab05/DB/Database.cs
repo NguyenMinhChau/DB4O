@@ -7,7 +7,7 @@ using System.Text;
 
 namespace Lab05.DB
 {
-    public class Database
+    class Database
     {
         public static string DbFileName { get; set; }
         public static IObjectContainer DB = null;
@@ -15,6 +15,44 @@ namespace Lab05.DB
             DB = Db4oEmbedded.OpenFile(DbFileName);
         }
         public static void CloseDB() { DB.Close(); }
+
+        public static void Store<T>(T obj)
+        {
+            try
+            {
+                DB.Store(obj);
+                DB.Commit();
+            }
+            catch
+            {
+                DB.Rollback();
+            }
+        }
+        public static void Save<A,B>(A obj1, B obj2)
+        {
+            try
+            {
+                DB.Store(obj1);
+                DB.Store(obj2);
+                DB.Commit();
+            }
+            catch
+            {
+                DB.Rollback();
+            }
+        }
+        public static void Delete<T>(T obj)
+        {
+            try
+            {
+                DB.Delete(obj);
+                DB.Commit();
+            }
+            catch
+            {
+                DB.Rollback();
+            }
+        }
 
         //Phương thức tạo đối tượng Employee
         public static void CreateEmployees(IObjectContainer db, string fileName)
@@ -33,14 +71,21 @@ namespace Lab05.DB
                         string fname = fields[0];
                         char minit = fields[1][0];
                         string lname = fields[2];
-                        int ssn = int.Parse(fields[3]);
+                        string ssn = fields[3];
                         string bdate = fields[4];
                         string address = fields[5];
-                        char sex = fields[6][0];
-                        float salary = float.Parse(fields[7]);
-                        Employee e = new Employee
+                        string sex = fields[6];
+                        double salary = double.Parse(fields[7]);
+                        Lab05.Elmasri_Navathe.Employee e = new Lab05.Elmasri_Navathe.Employee
                         {
-                           
+                            Ssn = ssn,
+                            FName = fname,
+                            MInit = minit,
+                            LName = lname,
+                            BirthDate = bdate,
+                            Address = address,
+                            Sex = sex,
+                            Salary = salary
                         };
                         db.Store(e);
                     }
@@ -49,6 +94,7 @@ namespace Lab05.DB
                 fs.Close();
             }
         }
+
 
         //Phương thức tạo đối tượng Depentdents
         public static void CreateDependents(IObjectContainer db, string fileName)
@@ -188,13 +234,26 @@ namespace Lab05.DB
                     string line = fin.ReadLine();
                     string[] fields = line.Split(','); 
                     int dno = int.Parse(fields[0]); 
-                    int essn = int.Parse(fields[1]); 
+                    string essn = fields[1]; 
                     string startDate = fields[2];
                     IList<Department> depts = db.Query(delegate (Department dept)
                     {
                         return (dept.DNumber == dno);
                     });
-                    
+                    Department d = null; 
+                    if (depts != null) 
+                        d = depts[0]; 
+                    IList<Lab05.Elmasri_Navathe.Employee> emps = db.Query(delegate (Lab05.Elmasri_Navathe.Employee emp) { 
+                        return (emp.Ssn == essn); });
+                    Lab05.Elmasri_Navathe.Employee e = null; 
+                    if (emps != null && emps.Count != 0) 
+                        e = emps[0]; 
+                    if (e != null && d != null) { 
+                        d.MgrStartDate = startDate; 
+                        e.Manages = d; 
+                        d.Manager = e; 
+                        db.Store(d); 
+                        db.Store(e); }
                 }
             }
         } 

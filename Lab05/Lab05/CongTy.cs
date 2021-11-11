@@ -26,7 +26,7 @@ namespace Lab05
 
         private void CongTy_Load(object sender, EventArgs e)
         {
-            Database.DbFileName = "employee.dat";
+            Database.DbFileName = "Employee.db";
             Database.Open();
         }
 

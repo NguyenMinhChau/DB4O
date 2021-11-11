@@ -10,14 +10,14 @@ namespace Lab05.Elmasri_Navathe
     {
         [Key]
         // attributes
-        public int Ssn { get; set; }
+        public string Ssn { get; set; }
         public string FName { get; set; }
         public char MInit { get; set; }
         public string LName { get; set; }
         public string Address { get; set; }
         public string BirthDate { get; set; }
-        public float Salary { get; set; }
-        public char Sex { get; set; }
+        public double Salary { get; set; }
+        public string Sex { get; set; }
         //relationships
         public Department WorksFor { get; set; }
         public Department Manages { get; set; }
@@ -26,7 +26,7 @@ namespace Lab05.Elmasri_Navathe
         public Employee Supervisor { get; set; }
         public List<Employee> Supervisees { get; set; }
 
-        public Employee(int ssn = 0, string fname = null, char minit = '0', string lname = null, string address = null, string dob = null, float salary = 0, char sex = '0')
+        public Employee(string ssn = null, string fname = null, char minit = '0', string lname = null, string address = null, string dob = null, double salary = 0.0, string sex = null)
         {
             Ssn = ssn;
             FName = fname;
